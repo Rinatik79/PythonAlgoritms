@@ -13,3 +13,19 @@ for i in range(0, 5):
 
 print("Here is our matrix:")
 print(*matrix, sep = "\n")
+
+lowests = []
+lowest = 0
+j = 0
+for i in range(5):
+    lowest = matrix[0][j]
+    for j in range(5):
+        if matrix[j][i] < lowest:
+            lowest = matrix[j][i]
+
+    lowests.append(lowest)
+
+aranged_lowests = lowests.copy()
+aranged_lowests.sort()
+
+print("You was needed " + str(aranged_lowests[len(aranged_lowests) - 1]))
