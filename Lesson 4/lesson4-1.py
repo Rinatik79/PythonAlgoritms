@@ -33,3 +33,5 @@ def main_changed():
     print("\nFunction main_changed takes: " + str(timeit.default_timer() - starttime) + " second.\n")
 
 cProfile.run('main_changed()')
+
+# I'm very surprised! Treating dictionary takes about 25% less time when treating the list!
