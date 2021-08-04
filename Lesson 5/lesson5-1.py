@@ -17,7 +17,7 @@ for i in range(companies_Qty):
 
 
 global_average_profit /= companies_Qty
-print("Global average profit for all " + str(companies_Qty) + " companies is: " + str(global_average_profit))
+print("\nGlobal average profit for all " + str(companies_Qty) + " companies is: " + str(global_average_profit))
 above_market = {}
 below_market = {}
 for one_company in summary_data:
@@ -26,7 +26,7 @@ for one_company in summary_data:
     else:
         below_market.update({one_company: summary_data.get(one_company)})
 
-print("We have these companies upper then average:")
+print("\nWe have these companies upper then average:")
 print(above_market)
 
 print("\nWe have these companies lower then average:")
