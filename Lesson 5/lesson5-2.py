@@ -1,6 +1,3 @@
-a = 0xA2
-b = 0xC4F
-
 def list_to_hex(crazy_list):
     out = ""
     return "0x" + out.join(crazy_list)
