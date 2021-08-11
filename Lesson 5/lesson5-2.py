@@ -12,7 +12,7 @@ first_entered_hex = input("Enter please your first hex number:")
 first_entered_hex = list(first_entered_hex)
 
 second_entered_hex = input("Enter please your second hex number:")
-second = list(first_entered_hex)
+second = list(second_entered_hex)
 
 
 sum = (hex(int(list_to_hex(first_entered_hex), 16) + int(list_to_hex(second_entered_hex),16)))
