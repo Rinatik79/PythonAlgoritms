@@ -9,8 +9,6 @@ print(random_array)
 
 
 for i in range(18, 0, -1):
-    #min = random_array[i]
-    print(i)
     for j in range(i - 1, -1, -1):
         if random_array[j] < random_array[i]:
             min = random_array[j]
