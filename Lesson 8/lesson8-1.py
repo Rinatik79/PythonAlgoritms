@@ -10,9 +10,7 @@ for i in range(len(s)):
         current_substring = s[i:j]
         current_hash_obj = hashlib.md5(current_substring.encode('utf-8')).hexdigest()
 
-        if hashlib.md5(s[i:j].encode('utf-8')).hexdigest() == current_hash_obj:
+        if hashlib.md5(s[i:j].encode('utf-8')).hexdigest() == current_hash_obj and current_substring !="":
             counter += 1
-        print(s[i:j])
 
-
-print("We have " + str(counter) + " substrings totally.")
+print("We have " + str(counter - 1) + " substrings totally.")
